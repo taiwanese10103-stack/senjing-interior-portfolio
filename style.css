@@ -1,1 +1,107 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, "Noto Sans TC", sans-serif;
+  color: #423d36;
+  background: #f8f6f1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 7%;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  text-decoration: none;
+  color: #423d36;
+  margin-left: 22px;
+}
+
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  padding: 8%;
+  color: white;
+  background:
+    linear-gradient(#0005, #0005),
+    url("images/living-room.jpg") center/cover;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 58px);
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #a58b6a;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+section {
+  padding: 90px 8%;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.works img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.works h3 {
+  padding: 18px;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  background: #403b34;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 6px;
+  }
+
+  .works {
+    grid-template-columns: 1fr;
+  }
+}
+
