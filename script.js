@@ -156,3 +156,69 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+// 作品圖片點擊放大功能
+document.querySelectorAll(".work-image img").forEach(function (img) {
+    img.style.cursor = "zoom-in";
+
+    img.addEventListener("click", function () {
+        const overlay = document.createElement("div");
+
+        overlay.style.cssText = `
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.88);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            cursor: zoom-out;
+            padding: 30px;
+        `;
+
+        const largeImage = document.createElement("img");
+        largeImage.src = img.src;
+
+        largeImage.style.cssText = `
+            max-width: 90%;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 6px;
+        `;
+
+        const closeButton = document.createElement("button");
+        closeButton.textContent = "×";
+
+        closeButton.style.cssText = `
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            color: white;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        `;
+
+        overlay.appendChild(largeImage);
+        overlay.appendChild(closeButton);
+        document.body.appendChild(overlay);
+
+        closeButton.addEventListener("click", function () {
+            overlay.remove();
+        });
+
+        overlay.addEventListener("click", function (event) {
+            if (event.target === overlay) {
+                overlay.remove();
+            }
+        });
+
+        document.addEventListener("keydown", function closeOnEscape(event) {
+            if (event.key === "Escape") {
+                overlay.remove();
+                document.removeEventListener("keydown", closeOnEscape);
+            }
+        });
+    });
+});
+
