@@ -865,3 +865,21 @@ img {
     font-size: 22px;
   }
 }
+/* 森境品牌 LOGO */
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .brand-logo img {
+    display: block;
+    width: 245px;
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .header .brand-logo img {
+        width: 185px;
+    }
+}
