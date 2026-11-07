@@ -885,3 +885,98 @@ img {
         width: 185px;
     }
 }
+
+/* ==============================
+   森境品牌四大設計理念
+   ============================== */
+
+.brand-values {
+  background: #F8F5EF;
+  padding: 110px 8%;
+}
+
+.brand-values-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand-values .eyebrow {
+  color: #89977A;
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-bottom: 22px;
+}
+
+.brand-values h2 {
+  color: #715B48;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.brand-values-intro {
+  color: #928477;
+  font-size: 15px;
+  margin-bottom: 55px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.value-card {
+  background: #FFFFFF;
+  padding: 35px 25px;
+  border-top: 2px solid #89977A;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+}
+
+.value-card span {
+  color: #89977A;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.value-card h3 {
+  color: #715B48;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0 15px;
+}
+
+.value-card p {
+  color: #928477;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+@media (max-width: 768px) {
+  .brand-values {
+    padding: 70px 7%;
+  }
+
+  .brand-values h2 {
+    font-size: 25px;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .value-card {
+    padding: 25px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
