@@ -278,7 +278,55 @@
         <p>每一份生活想像，都值得被好好設計。</p>
         <a href="mailto:taiwanese10103@gmail.com?subject=森境空間設計諮詢"
           class="btn btn-light">聯絡我們 ↗</a>
-             </div>
+
+<!-- 客戶預約諮詢表單 -->
+<div class="consultation-form">
+  <h3>預約空間設計諮詢</h3>
+  <p>告訴我們您的需求，一起打造理想生活空間。</p>
+
+  <form id="consultationForm">
+
+    <label for="customerName">姓名</label>
+    <input type="text" id="customerName"
+      placeholder="請輸入姓名" required>
+
+    <label for="customerPhone">聯絡電話</label>
+    <input type="tel" id="customerPhone"
+      placeholder="請輸入電話" required>
+
+    <label for="spaceType">空間類型</label>
+    <select id="spaceType" required>
+      <option value="">請選擇空間類型</option>
+      <option value="住宅空間">住宅空間</option>
+      <option value="客廳設計">客廳設計</option>
+      <option value="廚房設計">廚房設計</option>
+      <option value="臥室設計">臥室設計</option>
+      <option value="浴室設計">浴室設計</option>
+      <option value="其他空間">其他空間</option>
+    </select>
+
+    <label for="customerBudget">預算範圍</label>
+    <select id="customerBudget" required>
+      <option value="">請選擇預算</option>
+      <option value="30萬元以下">30萬元以下</option>
+      <option value="30至60萬元">30至60萬元</option>
+      <option value="60至100萬元">60至100萬元</option>
+      <option value="100萬元以上">100萬元以上</option>
+      <option value="尚未確定">尚未確定</option>
+    </select>
+
+    <label for="customerMessage">設計需求</label>
+    <textarea id="customerMessage"
+      placeholder="請描述您的空間需求..."
+      rows="4"></textarea>
+
+    <button type="submit" class="btn btn-light">
+      送出設計諮詢
+    </button>
+
+  </form>
+</div>
+</div>
     </section>
 
   </main>
