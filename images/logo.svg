@@ -1,0 +1,24 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 150">
+  <g fill="none" stroke="#70583D" stroke-width="5"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M38 105 V48 L91 10 L144 48 V105"/>
+  </g>
+  <g fill="#75815A">
+    <path d="M72 103 Q89 72 123 37"
+          fill="none" stroke="#75815A" stroke-width="3"/>
+    <path d="M88 79 Q60 47 54 65 Q58 82 88 79Z"/>
+    <path d="M98 65 Q94 34 114 30 Q117 49 98 65Z"/>
+    <path d="M108 55 Q135 30 146 44 Q133 59 108 55Z"/>
+    <path d="M77 94 Q54 83 52 99 Q64 108 77 94Z"/>
+  </g>
+  <text x="170" y="75"
+        font-family="Noto Sans TC, sans-serif"
+        font-size="39" font-weight="600"
+        letter-spacing="5" fill="#604B35">森境空間設計</text>
+  <text x="174" y="110"
+        font-family="Arial, sans-serif"
+        font-size="17" letter-spacing="5"
+        fill="#806A50">SENJING INTERIOR</text>
+  <path d="M174 124 H430" stroke="#B8A48B" stroke-width="1"/>
+</svg>
