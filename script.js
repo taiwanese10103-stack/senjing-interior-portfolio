@@ -118,5 +118,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
   console.log("森境空間設計網站已成功載入！");
 
+  // 7. 客戶設計諮詢表單
+  const consultationForm = document.getElementById("consultationForm");
+
+  if (consultationForm) {
+    consultationForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("customerName").value.trim();
+      const phone = document.getElementById("customerPhone").value.trim();
+      const space = document.getElementById("spaceType").value;
+      const budget = document.getElementById("customerBudget").value;
+      const message = document.getElementById("customerMessage").value.trim();
+
+      if (!name || !phone || !space || !budget) {
+        alert("請完整填寫姓名、電話、空間類型及預算！");
+        return;
+      }
+
+      const subject = "森境空間設計｜客戶設計諮詢";
+
+      const body =
+        "客戶姓名：" + name + "\n" +
+        "聯絡電話：" + phone + "\n" +
+        "空間類型：" + space + "\n" +
+        "預算範圍：" + budget + "\n" +
+        "設計需求：" + (message || "尚未填寫");
+
+      const email =
+        "mailto:taiwanese10103@gmail.com" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+      window.location.href = email;
+    });
+  }
+
 });
 
