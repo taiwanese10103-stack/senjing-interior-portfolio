@@ -784,3 +784,84 @@ img {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ==================================
+   森境空間設計｜客戶諮詢表單
+   自然奶茶木質風
+================================== */
+
+.consultation-form {
+  max-width: 650px;
+  margin: 65px auto 20px;
+  padding: 40px;
+  background: #f4eee5;
+  border: 1px solid #e2d6c7;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(85, 65, 45, 0.08);
+  text-align: left;
+}
+
+.consultation-form h3 {
+  color: #705640;
+  font-size: 26px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.consultation-form p {
+  color: #857563;
+  text-align: center;
+  margin-bottom: 28px;
+  line-height: 1.8;
+}
+
+.consultation-form label {
+  display: block;
+  color: #66513e;
+  font-weight: 600;
+  margin: 18px 0 8px;
+}
+
+.consultation-form input,
+.consultation-form select,
+.consultation-form textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #d8c9b8;
+  border-radius: 9px;
+  background: #fffdf9;
+  color: #554638;
+  font-family: inherit;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.consultation-form input:focus,
+.consultation-form select:focus,
+.consultation-form textarea:focus {
+  border-color: #a88a6c;
+}
+
+.consultation-form textarea {
+  resize: vertical;
+}
+
+.consultation-form button {
+  width: 100%;
+  margin-top: 25px;
+  cursor: pointer;
+  border: none;
+}
+
+@media (max-width: 600px) {
+  .consultation-form {
+    margin: 35px 15px;
+    padding: 25px 20px;
+  }
+
+  .consultation-form h3 {
+    font-size: 22px;
+  }
+}
