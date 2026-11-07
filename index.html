@@ -4,72 +4,304 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>森境空間設計｜打造理想生活</title>
+  <meta name="description" content="森境空間設計，以自然、木質與溫潤色調，打造舒適且富有質感的生活空間。">
+  <title>森境空間設計 SENJING INTERIOR</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <h2>森境空間設計</h2>
-  <nav>
-    <a href="#home">首頁</a>
-    <a href="#about">關於我們</a>
-    <a href="#works">設計作品</a>
-    <a href="#service">服務項目</a>
-    <a href="#contact">聯絡我們</a>
-  </nav>
-</header>
+  <!-- 導覽列 -->
+  <header class="header">
+    <a href="#home" class="logo">
+      <span class="logo-mark">森</span>
+      <span>
+        <strong>森境空間設計</strong>
+        <small>SENJING INTERIOR</small>
+      </span>
+    </a>
 
-<section id="home" class="hero">
-  <div>
-    <p>INTERIOR DESIGN</p>
-    <h1>讓空間，成為生活最美的風景</h1>
-    <p>用設計創造舒適、溫暖且有質感的生活。</p>
-    <a href="#works" class="btn">探索設計作品</a>
-  </div>
-</section>
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="開啟選單" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
-<section id="about">
-  <h2>關於我們</h2>
-  <p>以專業設計與細膩規劃，打造符合每個人需求的生活空間。</p>
-</section>
+    <nav class="nav" id="mainNav">
+      <a href="#home">首頁</a>
+      <a href="#about">關於我們</a>
+      <a href="#works">設計作品</a>
+      <a href="#services">服務項目</a>
+      <a href="#process">設計流程</a>
+      <a href="#contact" class="nav-contact">預約諮詢</a>
+    </nav>
+  </header>
 
-<section id="works">
-  <h2>精選設計作品</h2>
-  <div class="works">
-    <article>
-      <img src="images/living-room.jpg" alt="客廳設計">
-      <h3>現代簡約住宅</h3>
-    </article>
-    <article>
-      <img src="images/kitchen.jpg" alt="廚房設計">
-      <h3>溫馨木質廚房</h3>
-    </article>
-    <article>
-      <img src="images/bedroom.jpg" alt="臥室設計">
-      <h3>舒適臥室空間</h3>
-    </article>
-  </div>
-</section>
+  <main>
 
-<section id="service">
-  <h2>我們的服務</h2>
-  <p>住宅設計｜老屋翻新｜系統家具｜商業空間</p>
-</section>
+    <!-- 首頁主視覺 -->
+    <section class="hero" id="home">
+      <div class="hero-image"></div>
+      <div class="hero-overlay"></div>
 
-<section id="contact">
-  <h2>預約設計諮詢</h2>
-  <p>讓我們一起打造理想中的家。</p>
-  <a class="btn" href="joycemaybe2001@yahoo.com.tw">
-    聯絡我們
-  </a>
-</section>
+      <div class="hero-content reveal">
+        <p class="eyebrow">NATURAL · WARM · TIMELESS</p>
+        <h1>讓生活，回歸<br>自然的美好。</h1>
+        <p class="hero-description">
+          以自然材質與溫潤色調，<br>
+          為每一個生活故事，打造專屬的空間風景。
+        </p>
+        <a href="#works" class="btn btn-light">探索設計作品 ↗</a>
+      </div>
 
-<footer>
-  © 2026 森境空間設計 All Rights Reserved.
-</footer>
+      <div class="hero-caption">A SPACE THAT FEELS LIKE HOME.</div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- 品牌介紹 -->
+    <section class="about section" id="about">
+      <div class="section-label">01 / ABOUT US</div>
+
+      <div class="about-grid">
+        <div class="about-heading reveal">
+          <p class="small-title">ABOUT SENJING</p>
+          <h2>空間不只是設計，<br>更是生活的延伸。</h2>
+        </div>
+
+        <div class="about-text reveal">
+          <p>
+            森境空間設計相信，好的空間不需要過度裝飾，
+            而是讓材質、光線與生活自然融合。
+          </p>
+          <p>
+            從日常需求出發，重視空間比例、收納機能與
+            色彩搭配，讓每個角落都保有舒適與自在。
+          </p>
+          <p>
+            以自然為靈感，以生活為核心，
+            創造經得起時間考驗的居家美學。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 設計理念 -->
+    <section class="philosophy">
+      <div class="philosophy-inner reveal">
+        <p class="eyebrow">DESIGN PHILOSOPHY</p>
+        <h2>簡單，是一種生活態度。</h2>
+        <p>保留自然的溫度，讓每一天都住得剛剛好。</p>
+      </div>
+    </section>
+
+    <!-- 設計作品 -->
+    <section class="works section" id="works">
+      <div class="section-label">02 / OUR WORKS</div>
+
+      <div class="section-heading">
+        <div>
+          <p class="small-title">SELECTED SPACES</p>
+          <h2>空間作品</h2>
+          <p class="section-subtitle">
+            從每個生活場景，探索空間的不同可能。
+          </p>
+        </div>
+      </div>
+
+      <div class="filter-list" aria-label="作品分類">
+        <button class="filter-btn active" data-filter="all">全部作品</button>
+        <button class="filter-btn" data-filter="living">客廳</button>
+        <button class="filter-btn" data-filter="kitchen">廚房</button>
+        <button class="filter-btn" data-filter="bedroom">臥室</button>
+        <button class="filter-btn" data-filter="bathroom">浴室</button>
+      </div>
+
+      <div class="works-grid">
+
+        <article class="work-card reveal" data-category="living">
+          <div class="work-image">
+            <img src="images/livingroom.jpg"
+              alt="森境空間設計自然木質客廳"
+              loading="lazy">
+          </div>
+          <div class="work-info">
+            <div>
+              <span class="work-category">LIVING ROOM</span>
+              <h3>自然木質客廳</h3>
+            </div>
+            <span class="work-number">01</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="kitchen">
+          <div class="work-image">
+            <img src="images/kitchen.jpg"
+              alt="森境空間設計溫潤木質廚房"
+              loading="lazy">
+          </div>
+          <div class="work-info">
+            <div>
+              <span class="work-category">KITCHEN</span>
+              <h3>溫潤生活廚房</h3>
+            </div>
+            <span class="work-number">02</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="bedroom">
+          <div class="work-image">
+            <img src="images/bedroom.jpg"
+              alt="森境空間設計奶茶色臥室"
+              loading="lazy">
+          </div>
+          <div class="work-info">
+            <div>
+              <span class="work-category">BEDROOM</span>
+              <h3>靜謐休憩臥室</h3>
+            </div>
+            <span class="work-number">03</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="bathroom">
+          <div class="work-image">
+            <img src="images/bathroom.jpg"
+              alt="森境空間設計自然石材浴室"
+              loading="lazy">
+          </div>
+          <div class="work-info">
+            <div>
+              <span class="work-category">BATHROOM</span>
+              <h3>自然石感衛浴</h3>
+            </div>
+            <span class="work-number">04</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 服務項目 -->
+    <section class="services section" id="services">
+      <div class="section-label">03 / OUR SERVICES</div>
+
+      <div class="section-heading">
+        <div>
+          <p class="small-title">WHAT WE DO</p>
+          <h2>專業設計服務</h2>
+          <p class="section-subtitle">從需求出發，打造理想生活空間。</p>
+        </div>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card reveal">
+          <span class="service-number">01</span>
+          <div class="service-icon">⌂</div>
+          <h3>住宅空間設計</h3>
+          <p>依照家庭需求與生活習慣，規劃舒適且實用的居家環境。</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-number">02</span>
+          <div class="service-icon">▤</div>
+          <h3>空間格局規劃</h3>
+          <p>整合動線、採光與收納，讓空間發揮更好的使用效益。</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-number">03</span>
+          <div class="service-icon">◇</div>
+          <h3>材質與色彩搭配</h3>
+          <p>運用木質、石材與自然色系，營造和諧的空間氛圍。</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-number">04</span>
+          <div class="service-icon">✧</div>
+          <h3>裝修工程規劃</h3>
+          <p>協助整理裝修需求、工程項目與施工規劃。</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 設計流程 -->
+    <section class="process section" id="process">
+      <div class="section-label">04 / OUR PROCESS</div>
+
+      <div class="section-heading">
+        <div>
+          <p class="small-title">HOW WE WORK</p>
+          <h2>從想像到實現</h2>
+          <p class="section-subtitle">每一步，都讓理想生活更靠近。</p>
+        </div>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-item reveal">
+          <span>01</span>
+          <h3>初步諮詢</h3>
+          <p>了解需求、生活習慣與設計方向。</p>
+        </div>
+        <div class="process-item reveal">
+          <span>02</span>
+          <h3>現場丈量</h3>
+          <p>確認空間條件與實際使用需求。</p>
+        </div>
+        <div class="process-item reveal">
+          <span>03</span>
+          <h3>設計提案</h3>
+          <p>提出空間配置、材質及設計規劃。</p>
+        </div>
+        <div class="process-item reveal">
+          <span>04</span>
+          <h3>工程執行</h3>
+          <p>依確認內容安排工程與施工協調。</p>
+        </div>
+        <div class="process-item reveal">
+          <span>05</span>
+          <h3>完工交付</h3>
+          <p>完成空間細節確認，迎接新的生活。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <section class="contact" id="contact">
+      <div class="contact-content reveal">
+        <p class="eyebrow">LET'S CREATE YOUR SPACE</p>
+        <h2>讓我們一起，<br>打造理想中的家。</h2>
+        <p>每一份生活想像，都值得被好好設計。</p>
+        <a href="mailto:YOUR_EMAIL@example.com?subject=森境空間設計諮詢"
+          class="btn btn-light">聯絡我們 ↗</a>
+        <small class="email-note">請將網站中的聯絡信箱替換為正式信箱。</small>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <a href="#home" class="footer-logo">森境空間設計</a>
+    <p>SENJING INTERIOR DESIGN</p>
+    <div class="footer-links">
+      <a href="#about">關於我們</a>
+      <a href="#works">設計作品</a>
+      <a href="#services">服務項目</a>
+      <a href="#contact">聯絡我們</a>
+    </div>
+    <p class="copyright">
+      © <span id="year"></span> SENJING INTERIOR. All Rights Reserved.
+    </p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="回到頂部">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
 
