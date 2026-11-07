@@ -15,8 +15,9 @@
   --white: #FFFFFF;
   --serif: "Noto Serif TC", serif;
   --sans: "Noto Sans TC", sans-serif;
-}
-
+--sage: #89977A;
+--sage-light: #DCE3D5;
+--sage-dark: #657456;}
 * {
   margin: 0;
   padding: 0;
